@@ -6,34 +6,6 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1200px) {
-    /* Adjustments for viewport width up to 1200px */
-    .navbar {
-      padding: 26px 40px 26px 40px; /* Adjust padding */
-    }
-    
-    .container {
-      width: 600px; /* Adjust container width */
-      margin-left: 0px; /* Adjust left positioning */
-    }
-    
-    .content1{
-        width: 500px;
-    }
-
-    .content {
-      margin-left: 80px; /* Adjust left margin */
-      width: 100px; /* Adjust content width */
-    }
-    
-    .faq-container {
-      max-width: 10px; /* Adjust max-width */
-    }
-    
-    .footer {
-      padding: 20px 40px; /* Adjust padding */
-    }
-  }
   
 
 
@@ -85,7 +57,6 @@
   text-decoration: none;
 }
  
-
 
 .hero {
     position: relative;
@@ -202,8 +173,12 @@ button {
 }
 
 .image{
-    margin-right: 20px;}
-
+    margin-right: 20px;
+  }
+#img1{
+  width: 414px; 
+    height: 414px;
+}
 
 #btn1 {
   background-color:#F28D35;
@@ -393,4 +368,206 @@ button {
 
 
 
+@media screen and (max-width: 1200px) {
+  /* Adjustments for viewport width up to 1200px */
+  .navbar {
+    padding: 26px 40px 26px 40px; /* Adjust padding */
+  }
+  
+  .container {
+    width: 600px; /* Adjust container width */
+    margin-left: 0px; /* Adjust left positioning */
+  }
+  
+  .content1{
+      width: 550px;
+      margin-left: 10px;
+  }
+  .content1 h2{
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .content {
+    margin-left: 80px; /* Adjust left margin */
+    width: 500px; /* Adjust content width */
+  }
+  .text{
+    width: 500px;
+  }
+
+  .faq-container {
+    width: 700px; /* Adjust max-width */
+  }
+
+  .faq{
+    width: 700px;
+  }
+  
+  .footer {
+    padding: 20px 40px; /* Adjust padding */
+  }
+
+
+  
+.footer-column {
+  margin-top: 20px;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.footer-column1 {
+  width: 550px; /* Add desired width */
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.footer-divider { 
+  margin-left:250px;
+}
+
+.footer-description {
+  margin-left: 430px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for viewport width up to 1200px */
+  .navbar {
+    padding: 14px 25px 14px 25px; /* Adjust padding */
+  }
+  
+  
+  .container {
+    width: 768px;
+    height: 306px;
+    top: 354px;
+  }
+  
+  
+  .content1 {
+    text-align: left;
+    margin-top: 580px;
+    margin-left: 0px;
+    width: 700px;
+    height: 300px;
+  }
+  
+  
+  
+
+  .content {
+    margin-left: 40px; /* Adjust left margin */
+    margin-top: 300px;
+    width: 800px;
+    height: 414px;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: auto for image width, 1fr for remaining width */
+    align-items: left;
+    gap: 0px; /* Gap between columns */
+  }
+  
+  .text{
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+
+  .text p{
+     font-family: Poppins, Arial, sans-serif;
+     font-size: 24px;
+     font-weight: 600;
+     line-height: 33px;
+     letter-spacing: 0.4000000059604645px;
+     text-align: left;
+     color: #6B3CC9;
+     margin-top: 45px;
+  }
+  
+  #text1{
+      margin-top: 25px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: black;
+  }
+  
+  
+
+  #img1{
+    width: 275px; 
+    height: 275px;
+  }
+
+  
+  
+  #btn1 {
+    background-color:#F28D35;
+    margin-top: 25px;
+    margin-left: 0px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    padding: 12px 20px 12px 20px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    border: none;
+  }
+  
+
+  .faq-container {
+    width: 600px; /* Adjust max-width */
+  }
+
+  .faq{
+    width: 600px;
+  }
+  
  
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    min-height: 500px;
+  }
+  
+  .footer-column {
+    flex: 1 50% 50%; /* Take up half of the available space */
+    margin-left: 60px;
+  }
+  
+  .footer-column1 {
+    width: 750px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-column1 {
+      width: 100%; /* Make the first column take up full width on smaller screens */
+    }
+  }
+  
+
+.footer-divider { 
+  margin-left:50px;
+  margin-top: 420px;
+}
+
+.footer-description {
+  margin-left: 220px;
+}
+
+
+}
+} 
