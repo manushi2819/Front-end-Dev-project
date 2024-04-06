@@ -429,7 +429,7 @@ button {
 .footer-description {
   margin-left: 430px;
 }
-
+}
 
 
 @media screen and (max-width: 768px) {
@@ -568,6 +568,98 @@ button {
   margin-left: 220px;
 }
 
-
 }
-} 
+
+
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 14px 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .container {
+    width: 320px; /* Adjust width */
+    height: 306px;
+    top: 354px;
+  }
+  
+  .content1 {
+    text-align: center; /* Center align the content */
+    margin-top: 580px;
+    margin-left: 0px;
+    width: 320px; /* Adjust width */
+    height: 300px;
+  }
+  
+  .content {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 300px;
+    width: 375px; /* Adjust width */
+    height: auto; /* Set height to auto to allow content to adjust */
+    display: block; /* Change display to block for single column layout */
+  }
+  
+  .text {
+    width: auto; /* Set width to auto for full width */
+    margin-top: 20px;
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center align the text */
+  }
+  
+  .text p {
+    font-size: 18px; /* Adjust font size */
+    margin-top: 30px; /* Adjust margin */
+  }
+  
+  #text1 {
+    margin-top: 25px;
+    font-size: 14px; /* Adjust font size */
+    text-align: center; /* Center align the text */
+  }
+  
+  #img1 {
+    width: 200px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center align the image */
+  }
+  
+  #btn1 {
+    width: 150px; /* Adjust width */
+    margin: 25px auto 0; /* Center align the button */
+  }
+  
+  .faq-container {
+    width: 320px; /* Adjust max-width */
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  .faq {
+    width: 100%; /* Set width to full width */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+  
+  .footer {
+    min-height: auto; /* Set min-height to auto for smaller screens */
+  }
+  
+  .footer-column {
+    flex: 1 100%; /* Take up full width */
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  .footer-column1 {
+    width: 320px; /* Adjust width */
+    margin-top: 20px;
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  .footer-divider { 
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Adjust margin */
+  }
+  
+  .footer-description {
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center align the text */
+  }
+}
