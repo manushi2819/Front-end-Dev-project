@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT DIGITAL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+  <body>
+        <!--header-->
+        <div class="navbar">
+            <a href="#" class="navbar-logo"><img src="Logo.png" style="width: 225px; height: 35px;"></a>
+                <ul class="navbar-links">
+                 <li><a href="#">SERVICES</a></li>
+                 <li><a href="#">ABOUT US</a></li>
+                 <li><a href="#">CONTACT US</a></li>
+                 <li><a href="#">CAREERS</a></li>
+                </ul>
+        </div>
+
+
+     
+		
+			<div class="hero">
+				<div class="container">
+                        <div class="content1">
+                          <h2>We crush your competitors, goals, and sales records - without the B.S.</h2>
+                          <button>GET FREE CONSULTATION</button>
+                        </div>
+                     
+				</div>
+			</div>
+
+       
+                        <div class="content">
+                            <div class="image">
+                                <img src="image 2.png" style="width: 414px; height: 414px;"  alt="Image">
+                            </div>
+                            <div class="text">
+                                <p>Web & Mobile App Development</p>
+                                <p id="text1">Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content 
+                                    and engagement methods to respond to different intents shown by your potential customers who interact with your business online.</p>
+                                <button id="btn1">LEARN MORE</button>
+                            </div>
+                        </div>
+
+
+                        <div class="content" style="margin-top: 40px;">
+                            <div class="text">
+                                <p>Digital Strategy Consulting</p>
+                                <p id="text1">Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will 
+                                    never work in isolation and every business needs a different mix. 
+                                    We provide a clear concept and strategic overview to find the most efficient model for your business.</p>
+                                <button id="btn1">LEARN MORE</button>
+                            </div>
+                            <div class="image">
+                                <img src="image 1.png" style="width: 414px; height: 414px;"  alt="Image">
+                            </div>
+                        </div>
+                     
+                     
+		               <!--FAQs-->
+                    <div class="faq-container">
+                        <h2 id="faqtitle">Frequently asked questions</h2>
+                        <div class="faq">
+                           <p class="question" onclick="toggleAnswer(this)">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</p>
+                           <p class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+                        </div>
+                        <div class="faq">
+                           <p class="question" onclick="toggleAnswer(this)">Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?</p>
+                           <p class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+                        </div>
+                        <div class="faq">
+                            <p class="question" onclick="toggleAnswer(this)">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?</p>
+                             <p class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</p>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br>
+        <!--footer-->
+      
+        <div class="footer">
+            <div class="footer-column1">
+                <img src="Logo.png" style="width: 238.89px;height: 36.11px;"><br><br>
+                <p>Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your business results.</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Our Technologies</h3>
+                <ul class="footer-links">
+                    <li><a href="#">ReactJS</a></li>
+                    <li><a href="#">Gatsby</a></li>
+                    <li><a href="#">NextJS</a></li>
+                    <li><a href="#">NodeJS</a></li>
+                    <li><a href="#">GraphQL</a></li>
+                    <li><a href="#">Laravel</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Social media Marketing</a></li>
+                    <li><a href="#">Web & Mobile App Development</a></li>
+                    <li><a href="#">Data & Analytics</a></li>
+                    <li><a href="#">Google Marketing solutions</a></li>
+                    <li><a href="#">Search Engine Optimization</a></li>
+                    
+                </ul>
+            </div>
+            
+                <hr class="footer-divider">
+                <p class="footer-description"><a href="#">Privacy Policy</a> &nbsp; | &nbsp; <a href="#">Terms & Conditions</a></p>
+            
+        </div>
+        
+        
+        
+    <script>
+    // JavaScript function to toggle answer visibility
+    function toggleAnswer(question) {
+      question.parentElement.classList.toggle('active');
+      
+      // Collapse other faq items
+      var faqs = document.querySelectorAll('.faq');
+      faqs.forEach(faq => {
+        if (faq !== question.parentElement) {
+          faq.classList.remove('active');
+        }
+      });
+    }
+    </script>
+         
+
+</body>
+</html>
