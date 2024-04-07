@@ -25,13 +25,31 @@
   opacity: 0px;
 }
 
+
+
+/* Hamburger icon */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+/* Hamburger line styles */
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+
 /* Navigation links */
 .navbar-links {
   list-style-type: none;
+  display: flex;
 }
 
 .navbar-links li {
-  display: inline-block;
+  display: none;
   margin-right: 40px;
 
 }
@@ -108,7 +126,7 @@ h2 {
 }
 
 
-button {
+#btn2 {
   background-color:#F28D35;
   margin-top: 15px;
   margin-left: 25px;
@@ -127,8 +145,12 @@ button {
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
   border: none;
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
 }
 
+#btn2:hover {
+  box-shadow: 0px 4px 8px rgba(0.1, 0.1, 0.1, 0.2); /* Add shadow effect on hover */
+}
 
 .content{
   text-align: left;
@@ -199,6 +221,9 @@ button {
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
   border: none;
+}
+#btn1:hover {
+  box-shadow: 0px 4px 8px rgba(0.1, 0.1, 0.1, 0.2); /* Add shadow effect on hover */
 }
 
 
@@ -368,298 +393,6 @@ button {
 
 
 
-@media screen and (max-width: 1200px) {
-  /* Adjustments for viewport width up to 1200px */
-  .navbar {
-    padding: 26px 40px 26px 40px; /* Adjust padding */
-  }
-  
-  .container {
-    width: 600px; /* Adjust container width */
-    margin-left: 0px; /* Adjust left positioning */
-  }
-  
-  .content1{
-      width: 550px;
-      margin-left: 10px;
-  }
-  .content1 h2{
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  .content {
-    margin-left: 80px; /* Adjust left margin */
-    width: 500px; /* Adjust content width */
-  }
-  .text{
-    width: 500px;
-  }
-
-  .faq-container {
-    width: 700px; /* Adjust max-width */
-  }
-
-  .faq{
-    width: 700px;
-  }
-  
-  .footer {
-    padding: 20px 40px; /* Adjust padding */
-  }
-
-
-  
-.footer-column {
-  margin-top: 20px;
-  flex: 1;
-  margin-left: 10px;
-}
-
-.footer-column1 {
-  width: 550px; /* Add desired width */
-  margin-left: 60px;
-  margin-top: 20px;
-}
-
-.footer-divider { 
-  margin-left:250px;
-}
-
-.footer-description {
-  margin-left: 430px;
-}
-}
-
-
-@media screen and (max-width: 768px) {
-  /* Adjustments for viewport width up to 1200px */
-  .navbar {
-    padding: 14px 25px 14px 25px; /* Adjust padding */
-  }
-  
-  
-  .container {
-    width: 768px;
-    height: 306px;
-    top: 354px;
-  }
-  
-  
-  .content1 {
-    text-align: left;
-    margin-top: 580px;
-    margin-left: 0px;
-    width: 700px;
-    height: 300px;
-  }
-  
-  
-  
-
-  .content {
-    margin-left: 40px; /* Adjust left margin */
-    margin-top: 300px;
-    width: 800px;
-    height: 414px;
-    display: grid;
-    grid-template-columns: auto 1fr; /* Two columns: auto for image width, 1fr for remaining width */
-    align-items: left;
-    gap: 0px; /* Gap between columns */
-  }
-  
-  .text{
-    width: 350px;
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-
-  .text p{
-     font-family: Poppins, Arial, sans-serif;
-     font-size: 24px;
-     font-weight: 600;
-     line-height: 33px;
-     letter-spacing: 0.4000000059604645px;
-     text-align: left;
-     color: #6B3CC9;
-     margin-top: 45px;
-  }
-  
-  #text1{
-      margin-top: 25px;
-      font-family: Inter;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 22px;
-      text-align: left;
-      color: black;
-  }
-  
-  
-
-  #img1{
-    width: 275px; 
-    height: 275px;
-  }
-
-  
-  
-  #btn1 {
-    background-color:#F28D35;
-    margin-top: 25px;
-    margin-left: 0px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 550;
-    line-height: 14px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    cursor: pointer;
-    width: 130px;
-    height: 40px;
-    padding: 12px 20px 12px 20px;
-    gap: 8px;
-    border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
-    border: none;
-  }
-  
-
-  .faq-container {
-    width: 600px; /* Adjust max-width */
-  }
-
-  .faq{
-    width: 600px;
-  }
-  
- 
-  
-  .footer {
-    display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
-    min-height: 500px;
-  }
-  
-  .footer-column {
-    flex: 1 50% 50%; /* Take up half of the available space */
-    margin-left: 60px;
-  }
-  
-  .footer-column1 {
-    width: 750px;
-    margin-top: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-column1 {
-      width: 100%; /* Make the first column take up full width on smaller screens */
-    }
-  }
-  
-
-.footer-divider { 
-  margin-left:50px;
-  margin-top: 420px;
-}
-
-.footer-description {
-  margin-left: 220px;
-}
-
-}
 
 
 
-@media screen and (max-width: 375px) {
-  .navbar {
-    padding: 14px 10px; /* Adjust padding for smaller screens */
-  }
-  
-  .container {
-    width: 320px; /* Adjust width */
-    height: 306px;
-    top: 354px;
-  }
-  
-  .content1 {
-    text-align: center; /* Center align the content */
-    margin-top: 580px;
-    margin-left: 0px;
-    width: 320px; /* Adjust width */
-    height: 300px;
-  }
-  
-  .content {
-    margin-left: 0; /* Remove left margin */
-    margin-top: 300px;
-    width: 375px; /* Adjust width */
-    height: auto; /* Set height to auto to allow content to adjust */
-    display: block; /* Change display to block for single column layout */
-  }
-  
-  .text {
-    width: auto; /* Set width to auto for full width */
-    margin-top: 20px;
-    margin-left: 0; /* Remove left margin */
-    text-align: center; /* Center align the text */
-  }
-  
-  .text p {
-    font-size: 18px; /* Adjust font size */
-    margin-top: 30px; /* Adjust margin */
-  }
-  
-  #text1 {
-    margin-top: 25px;
-    font-size: 14px; /* Adjust font size */
-    text-align: center; /* Center align the text */
-  }
-  
-  #img1 {
-    width: 200px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center align the image */
-  }
-  
-  #btn1 {
-    width: 150px; /* Adjust width */
-    margin: 25px auto 0; /* Center align the button */
-  }
-  
-  .faq-container {
-    width: 300px; /* Adjust max-width */
-    margin: 0 auto; /* Center align the container */
-  }
-  
-  .faq {
-    width: 300px; /* Set width to full width */
-    margin-bottom: 20px; /* Adjust margin */
-  }
-  
-  .footer {
-    min-height: auto; /* Set min-height to auto for smaller screens */
-  }
-  
-  .footer-column {
-    flex: 1 100%; /* Take up full width */
-    margin-left: 0; /* Remove left margin */
-  }
-  
-  .footer-column1 {
-    width: 320px; /* Adjust width */
-    margin-top: 20px;
-    margin-left: 0; /* Remove left margin */
-  }
-  
-  .footer-divider { 
-    margin-left: 0; /* Remove left margin */
-    margin-top: 20px; /* Adjust margin */
-  }
-  
-  .footer-description {
-    margin-left: 0; /* Remove left margin */
-    text-align: center; /* Center align the text */
-  }
-}

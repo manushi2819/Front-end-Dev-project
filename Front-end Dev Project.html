@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AT DIGITAL</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    
     
 
 </head>
@@ -16,7 +19,16 @@
         <!--header-->
         <div class="navbar">
             <a href="#" class="navbar-logo"><img src="Logo.png" style="width: 225px; height: 35px;"></a>
-                <ul class="navbar-links">
+                
+            <!-- Hamburger Menu Icon -->
+               <div class="hamburger-menu" onclick="toggleMenu()">
+                 <div class="line"></div>
+                 <div class="line"></div>
+                 <div class="line"></div>
+                 <div class="line"></div>
+               </div>
+            
+            <ul class="navbar-links" id="navbarLinks">
                  <li><a href="#">SERVICES</a></li>
                  <li><a href="#">ABOUT US</a></li>
                  <li><a href="#">CONTACT US</a></li>
@@ -31,7 +43,7 @@
 				<div class="container">
                         <div class="content1">
                           <h2>We crush your competitors, goals, and sales records - without the B.S.</h2>
-                          <button>GET FREE CONSULTATION</button>
+                          <button id="btn2">GET FREE CONSULTATION</button>
                         </div>
                      
 				</div>
@@ -141,6 +153,17 @@
         }
       });
     }
+
+    // JavaScript function to toggle hamburger menu 
+    function toggleMenu() {
+    var navbarLinks = document.getElementById("navbarLinks");
+       if (navbarLinks.style.display === "flex") {
+          navbarLinks.style.display = "none";
+          } else {
+          navbarLinks.style.display = "flex";
+         }
+    }
+
     </script>
          
 
